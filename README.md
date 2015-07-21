@@ -2,7 +2,7 @@
 
 ##Install:
 
-**DANGER!** This commands delete your .vimrc!
+**DANGER!** This commands will replace your .vimrc!
 
     #For bitbucket.org:
     $ git clone --recursive https://bitbucket.org/dimsharav/vim_vundle ~/.vim
