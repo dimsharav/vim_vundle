@@ -10,8 +10,8 @@
     $ git clone --recursive https://github.com/dimsharav/vim_vundle.git ~/.vim
     $ cp ~/.vim/vimrc_example ~/.vimrc
 
-Run **vim** and type 
+Run
 
-    :BundleInstall
+    vim -u ~/.vimrc +BundleInstall +qall
 
 Just restart vim.
