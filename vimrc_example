@@ -2,11 +2,18 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle.vim
-call vundle#rc()
+call vundle#begin()
 
-Bundle 'gmarik/vundle.vim'
-Bundle 'wombat256.vim'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'wombat256.vim'
+Plugin 'pep8'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'mattn/emmet-vim'
 
+call vundle#end()
 "Vundle section end
 
 filetype plugin indent on       " определять тип файла и отсутпы 
