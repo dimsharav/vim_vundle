@@ -6,12 +6,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'wombat256.vim'
-Plugin 'pep8'
+Plugin 'flake8-vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'mattn/emmet-vim'
+Plugin 'vimwiki/vimwiki'
 
 call vundle#end()
 "Vundle section end
@@ -214,8 +215,8 @@ set autochdir
 " (from Sontek's article)
 "--------
 
-" Проверка PEP8
-let g:pep8_map='<leader>8'
+" Проверка Flake8
+map <leader>8 :PyFlake<CR>
 
 " django test
 map <leader>dt :set makeprg=python2\ manage.py\ test\|:call MakeGreen()<CR>
