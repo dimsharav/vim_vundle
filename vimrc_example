@@ -64,7 +64,10 @@ set shiftwidth=2                " ширина отступа - 4 пробела
 " Описание TODO 
 "autocmd! bufwritepost ~/.vimrc execute "normal! :source ~/.vimrc"
 
-colorscheme wombat256mod
+try
+  colorscheme wombat256mod
+catch
+endtry
 set t_Co=256        " 256 цветов
 
 "--------------
