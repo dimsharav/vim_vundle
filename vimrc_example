@@ -12,7 +12,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'mattn/emmet-vim'
-Plugin 'vimwiki/vimwiki'
+"Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/fzf'
 
 call vundle#end()
