@@ -7,6 +7,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'wombat256.vim'
 "Plugin 'flake8-vim'
+Plugin 'dense-analysis/ale'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -14,6 +15,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'mattn/emmet-vim'
 "Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/fzf'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 "Vundle section end
@@ -183,7 +185,7 @@ let mapleader = ","                 " установка <leader> в ","
 map <leader>td <Plug>TaskList       " ,td включает плагин TaskList
 map <leader>n :NERDTreeToggle<CR>   " ,n открывает NERDTree
 map <leader>h :tabp<CR>             " ,h открывает предыдущий буфер
-map <leader>l :tabn<CR>             " ,h открывает следующий буфер
+map <leader>l :tabn<CR>             " ,l открывает следующий буфер
 
 cnoreabbrev t tabnew
 
@@ -219,8 +221,8 @@ set autochdir
 " (from Sontek's article)
 "--------
 
-" Проверка Flake8
-map <leader>8 :PyFlake<CR>
+" Проверка Flake8 - убрана из-за смены линтера на ale + pylint
+"autocmd FileType python map <buffer> <leader>8 :call flake8#Flake8()<CR>
 
 " django test
 map <leader>dt :set makeprg=python2\ manage.py\ test\|:call MakeGreen()<CR>
