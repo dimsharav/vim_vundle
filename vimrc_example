@@ -13,7 +13,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'mattn/emmet-vim'
-"Plugin 'vimwiki/vimwiki'
+Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/fzf'
 Plugin 'tpope/vim-fugitive'
 
@@ -29,6 +29,14 @@ set ic!                         " регистронезависимый пои�
 set nobackup
 set nowritebackup
 set noswapfile 
+
+" vimwiki configuration
+let g:vimwiki_list = [{
+	\ 'path': '~/Dropbox/wiki',
+	\ 'syntax': 'markdown',
+	\ 'ext': '.md',
+	\ 'path_html': '~/Dropbox/wiki/site_html/',
+  \ 'custom_wiki2html': 'vimwiki_markdown'}]
 
 set history=50                  " keep 50 lines of command line history
 
