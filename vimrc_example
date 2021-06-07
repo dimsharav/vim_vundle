@@ -36,7 +36,7 @@ let g:vimwiki_list = [{
 	\ 'syntax': 'markdown',
 	\ 'ext': '.md',
 	\ 'path_html': '~/Dropbox/wiki/site_html/',
-  \ 'custom_wiki2html': 'vimwiki_markdown'}]
+  \ 'custom_wiki2html': '~/.vim/wiki2html.sh'}]
 
 set history=50                  " keep 50 lines of command line history
 
