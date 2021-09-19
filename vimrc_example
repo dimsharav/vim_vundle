@@ -8,14 +8,15 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'wombat256.vim'
 "Plugin 'flake8-vim'
 Plugin 'dense-analysis/ale'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'mattn/emmet-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/fzf'
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
+Plugin 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
 call vundle#end()
 "Vundle section end
