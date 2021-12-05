@@ -6,6 +6,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'wombat256.vim'
+Plugin 'surround.vim'
 "Plugin 'flake8-vim'
 Plugin 'dense-analysis/ale'
 "Plugin 'davidhalter/jedi-vim'
