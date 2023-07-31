@@ -36,8 +36,8 @@ set noswapfile
 
 " vimwiki configuration
 let g:vimwiki_list = [{
-	\ 'path': '~/Dropbox/wiki',
-	\ 'path_html': '~/Dropbox/wiki/site_html/'}]
+	\ 'path': '~/wiki',
+	\ 'path_html': '~/wiki/site_html/'}]
 
 set history=50                  " keep 50 lines of command line history
 
