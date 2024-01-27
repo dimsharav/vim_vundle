@@ -1,3 +1,5 @@
+" Get the defaults that most users want.
+source $VIMRUNTIME/defaults.vim
 " Vundle section begin
 set nocompatible
 filetype off
@@ -24,7 +26,7 @@ Plugin 'yaegassy/coc-ansible'
 call vundle#end()
 "Vundle section end
 
-filetype plugin indent on       " определять тип файла и отсутпы 
+filetype plugin indent on       " определять тип файла и отступы 
 syntax on                       " подсветка синтаксиса (иногда тормозит)
 set hlsearch                    " подсветка найденных значений
 set ic!                         " регистронезависимый поиск
@@ -41,7 +43,7 @@ let g:vimwiki_list = [{
 
 set history=50                  " keep 50 lines of command line history
 
-"set cursorline                 " Выделять строку, на которой стоит курсор
+set cursorline                 " Выделять строку, на которой стоит курсор
 
 set ruler	                    " описание TODO
 set noshowcmd	            	" display incomplete commands
@@ -65,11 +67,11 @@ set statusline='status'
 set nu                          " нумерация строк
 
 set expandtab                   " пробелы вместо табуляции
-set tabstop=2                   " размер табуляции - 4
-set shiftwidth=2                " ширина отступа - 4 пробела
+set tabstop=2                   " размер табуляции - 2
+set shiftwidth=2                " ширина отступа - 2 пробела
 
-" Подсветка 80 символов
-"set colorcolumn=80
+" Подсветка 120 символов
+"set colorcolumn=120
 "highlight ColorColumn ctermbg=darkgray
 
 " Описание TODO 
@@ -245,6 +247,9 @@ imap <F7> <esc>:w<cr>:execute '!python3 %'<CR>
 nmap <F9> :w<cr>:execute '!fpc % && ./%'<CR>
 vmap <F9> <esc>:w<cr>:execute '!fpc % && ./%'<CR>
 imap <F9> <esc>:w<cr>:execute '!fpc % && ./%'<CR>
+
+" Включение системного выделения текста мышкой
+set mouse=r
 
 " Защита от CVE-2019-12735
 set nomodeline
